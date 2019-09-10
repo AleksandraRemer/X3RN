@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 import pandas as pd 
 import numpy as np 
 import json 
@@ -13,20 +10,12 @@ import requests
 from pandas.io.json import json_normalize
 import sqlalchemy as sa
 
-
-# In[2]:
-
-
 basics = {"domain" : "eu.shibumi.com",
 "client_id" : "329c7049-681c-4df9-bddf-083a24fe51f5",
 "client_secret" : "df4d4791-c1bd-46b5-a345-356a494f987c",
 "username": "api-capita-ctt-etl@shibumi.com",
 "password":"d4Wmt71un2FKPPdhQf5wxwB!zQqac",
 "enterprise" : "a2db7acf-b61c-4cec-af46-ff7d10c52a22"}
-
-
-# In[10]:
-
 
 url = "https://eu.shibumi.com/api/2.0/enterprise/a2db7acf-b61c-4cec-af46-ff7d10c52a22/GraphQL/graphQL"
 
